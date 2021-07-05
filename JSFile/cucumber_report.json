@@ -1,0 +1,158 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "test-login-application;test-login-page",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Test login page",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "TC_L001 Navigate to the login page \"https://staging.tryoncourse.com/sign-in\"",
+            "match": {
+              "location": "../Features/Step_Definitions/StepDef.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2993000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "TC_L002 Click on Sign-In without entering the username and password",
+            "match": {
+              "location": "../Features/Step_Definitions/StepDef.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18179000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "TC_L003 Start to type your When step here Enter in-correct password \"mamatha@zibtek.in\" and \"12345678\"",
+            "match": {
+              "location": "../Features/Step_Definitions/StepDef.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27627000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "TC_L004 Enter in-correct username \"bcde@gmail.com\" and \"123456\"",
+            "match": {
+              "location": "../Features/Step_Definitions/StepDef.ts:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28124000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "TC_L005 Enter in-correct username and capture error message \"abcdgmail.com\"",
+            "match": {
+              "location": "../Features/Step_Definitions/StepDef.ts:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27614000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "TC_L006 Enter 4 digit password and capture the error \"1234\"",
+            "match": {
+              "location": "../Features/Step_Definitions/StepDef.ts:76"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18359000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "Tc_L007 & Tc_L008 User should navigate to the forgot password screen by clicking on the Forgot Password link",
+            "match": {
+              "location": "../Features/Step_Definitions/StepDef.ts:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18559000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "Tc_L009 To capture the error without entering the email",
+            "match": {
+              "location": "../Features/Step_Definitions/StepDef.ts:94"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18257000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "Tc_L010 User enters invalid email and click on forgot password \"abcdgmail.com\"",
+            "match": {
+              "location": "../Features/Step_Definitions/StepDef.ts:102"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 18406000000,
+              "error_message": "AssertionError: expected { Object (browser_, then, ...) } to equal 'Invalid email 🙆‍♂️'\n    at World.<anonymous> (/Users/naguraj/Documents/cucumbertsc/Features/Step_Definitions/StepDef.ts:109:30)\n    at step (/Users/naguraj/Documents/cucumbertsc/JSFile/Features/Step_Definitions/StepDef.js:33:23)\n    at Object.next (/Users/naguraj/Documents/cucumbertsc/JSFile/Features/Step_Definitions/StepDef.js:14:53)\n    at fulfilled (/Users/naguraj/Documents/cucumbertsc/JSFile/Features/Step_Definitions/StepDef.js:5:58)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 15000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "test-login-application",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Test login application",
+    "tags": [],
+    "uri": "../Features/Test1.feature"
+  }
+]

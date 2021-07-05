@@ -1,0 +1,45 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "test-banking-application;launch-url",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Launch URL",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I launch the url \"http://way2automation.com/angularjs-protractor/banking/#/login\"",
+            "match": {
+              "location": "../Features/Step_Definitions/StepDef.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 21000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "test-banking-application",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Test Banking application",
+    "tags": [],
+    "uri": "../Features/Test1.feature"
+  }
+]
