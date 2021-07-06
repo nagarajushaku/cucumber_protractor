@@ -7,8 +7,6 @@ var expect = chai.expect;
 var {setDefaultTimeout} = require('@cucumber/cucumber');
 setDefaultTimeout(60 * 1000);
 let objLogincustomer = new Logincustomer();
-//let objAddCustomer = new Addcustomer();
-
 Before({timeout: 60 * 1000}, function() {  
   // Does some slow browser/filesystem/network actions  
   browser.manage().window().maximize();  
@@ -106,8 +104,30 @@ When('Tc_L010 User enters invalid email and click on forgot password {string}', 
   await browser.sleep(9000);
   let afteremailerror = await objLogincustomer.afteremailerror.getText();
   console.log("afteremailerror"+afteremailerror);
-  expect(afteremailerror).to.equals("Invalid email 🙆‍♂️")
+  expect(afteremailerror).to.equals("Invalid email 🙆‍♂️");
+  await objLogincustomer.forgotEmails.clear();  
+
 });
+When("Tc_L011 User enters unregistered email and click on forgot password {string}",async function(string){
+  await objLogincustomer.forgotEmails.sendKeys(string)
+  await browser.sleep(9000)
+  await objLogincustomer.resetpassword.click();
+  await browser.sleep(9000);
+  let  forgotEmaildoesnot=await objLogincustomer.forgotEmaildoesnot.getText();
+  console.log("forgotEmaildoesnot"+forgotEmaildoesnot);
+  expect(forgotEmaildoesnot).to.equals("Email does not exist, Please enter a registered one");
+  await objLogincustomer.forgotEmails.clear();
+});
+When('Tc_L012 User enters correctregistered email and click on forgot password {string}', async function (string) {  await objLogincustomer.forgotEmails.sendKeys(string)
+  await browser.sleep(9000)
+  await objLogincustomer.resetpassword.click();
+  await browser.sleep(9000);
+  let  forgotloginsuccess=await objLogincustomer.forgotloginsuccess.getText();
+  console.log("forgotloginsuccess"+forgotloginsuccess);
+  expect(forgotloginsuccess).to.equals(forgotloginsuccess);
+  await objLogincustomer.forgotEmails.clear();
+});
+
 
 
 

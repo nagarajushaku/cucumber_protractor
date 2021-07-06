@@ -10,3 +10,7 @@ Feature: Test login application
         When Tc_L007 & Tc_L008 User should navigate to the forgot password screen by clicking on the Forgot Password link
         When Tc_L009 To capture the error without entering the email
         When Tc_L010 User enters invalid email and click on forgot password "abcdgmail.com"
+        When Tc_L011 User enters unregistered email and click on forgot password "abcdef@gmail.com"
+        When Tc_L012 User enters correctregistered email and click on forgot password "abcd@gmail.com"
+        When Tc_L013 User navigated back to the login screen by clicking on Back to login
+        When Tc_L-14 User enters correct username and password and click on Sign-in "mamatha@zibtek.in" and "123456"
